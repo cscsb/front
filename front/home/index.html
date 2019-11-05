@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <title>Todo</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel=stylesheet href=./css/page.css>
+    <link rel=stylesheet href=./css/main.css>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1465896_kzpo7cgss3.css">
+</head>
+<body>
+<div class="container flex">
+    <div class=sidebar id=sidebar>
+        <button id=addMenu class="btn btn-primary btn-sm margin-b-10" onclick=addMenu()>添加菜单</button>
+        <button id="showAddItemBtn" class="btn btn-primary btn-sm margin-b-10">添加todo</button>
+        <button class="file btn btn-sm btn-primary margin-b-10">上传文件
+            <input type=file name="" id=uploadFile></button>
+        <div id=menuList></div>
+    </div>
+    <div class=right-content>
+        <div class=itemList></div>
+        <div class="addItem flex hide"><input class=newItemInput name=newItem type=text>
+            <button class="btn  btn-sm" onclick=fnAdd(this)><span class="iconfont icon-paper"></span></button>
+        </div>
+    </div>
+</div>
+
+<script src=./js/jquery.js></script>
+<script src=./js/bootstrap.min.js></script>
+<script src=./js/bootbox.min.js></script>
+<script src=./js/const.js></script>
+<script src="./js/helper.js"></script>
+<script src="./js/main.min.js"></script>
+</body>
+</html>
